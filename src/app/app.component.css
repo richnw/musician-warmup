@@ -1,0 +1,29 @@
+.header {
+    background-color: #274c77;
+    width:100%;
+    margin: 0 auto;
+    color: #A3CEF1;
+    display: grid;
+    
+}
+
+.title {
+    padding-bottom: 0.5em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    
+    
+}
+
+.subtitle {
+    padding-bottom: 0.5em;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+     
+}
+

@@ -1,0 +1,5 @@
+
+<div class="btn_timer col-sm-12 col-md-5 p-3"><button type="button" class="btn" *ngIf="showButton" (click)="start() " >Let's go!</button></div>
+<p class="exercise row justify-content-center" *ngIf="!showButton">{{printExercise()}}</p>
+<countdown class="timer col-sm-12 col-md-5 pt-3 justify-items-center" #cd [config]="{leftTime: timeData, demand: true}" (event)="handleEvent($event)"></countdown>
+

@@ -1,0 +1,61 @@
+.timer {
+  color: #274C77;
+  font-size:xx-large;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  justify-items: center;
+  display: grid;
+  padding: 0;
+}
+
+.btn_timer {
+  display: grid;
+}
+
+.exercise {
+  font-size: xx-large;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+}
+
+.btn {
+
+/* CSS */
+
+  align-items: center;
+  background-color: #e7ecef;
+  border: 2px solid #274c77;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #274C77;
+  cursor: pointer;
+  display: grid;
+  font-family: Inter,sans-serif;
+  font-size: xx-large;
+  height: 48px;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+.btn:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
