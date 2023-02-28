@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { CountdownComponent, CountdownEvent } from 'ngx-countdown';
 
 let counter: number = 0;
-let exerciseTime = 5;
+let exerciseTime = 30;
 
 @Component({
   selector: 'app-exercise-timer',
@@ -24,12 +24,12 @@ export class ExerciseTimerComponent {
 
   printExercise() {
     if (counter == 0) return '';
-    if (counter == 1) return 'first';
-    if (counter == 2) return 'second';
-    if (counter == 3) return 'third';
-    if (counter == 4) return 'fourth';
-    if (counter == 5) return 'fifth';
-    if (counter == 6) return 'sixth and final';
+    if (counter == 1) return 'Jump around and Shake Everything Out';
+    if (counter == 2) return 'Fingertips on shoulders - Elbow Circles';
+    if (counter == 3) return 'Twists';
+    if (counter == 4) return 'Side Bends';
+    if (counter == 5) return 'Hula Hoops with Wrist Circles';
+    if (counter == 6) return 'Fold forwards and hang upside down';
     return "Congratulations- you're ready to play";
   }
 
@@ -39,7 +39,7 @@ export class ExerciseTimerComponent {
       return;
     }
     if (e.action == 'done' && counter == 5) {
-      this.countdown.config = { leftTime: 10, demand: true };
+      this.countdown.config = { leftTime: 60, demand: true };
     }
     if (e.action == 'done') {
       counter++;
