@@ -24,11 +24,11 @@ export class ExerciseTimerComponent {
 
   printExercise() {
     if (counter == 0) return '';
-    if (counter == 1) return 'Jump around and Shake Everything Out';
-    if (counter == 2) return 'Fingertips on shoulders - Elbow Circles';
+    if (counter == 1) return 'Jump around and shake everything out';
+    if (counter == 2) return 'Fingertips on shoulders - elbow circles';
     if (counter == 3) return 'Twists';
-    if (counter == 4) return 'Side Bends';
-    if (counter == 5) return 'Hula Hoops with Wrist Circles';
+    if (counter == 4) return 'Side bends';
+    if (counter == 5) return 'Hula hoops with wrist circles';
     if (counter == 6) return 'Fold forwards and hang upside down';
     return "Congratulations- you're ready to play";
   }
