@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { CountdownComponent, CountdownEvent } from 'ngx-countdown';
 
 let counter: number = 0;
-let exerciseTime = 3;
+let exerciseTime = 30;
 let audio = new Audio()
 
 @Component({
@@ -48,7 +48,7 @@ export class ExerciseTimerComponent {
       return;
     }
     if (e.action == 'done' && counter == 5) {
-      this.countdown.config = { leftTime: 6, demand: true };
+      this.countdown.config = { leftTime: 60, demand: true };
     }
     if (e.action == 'done') {
       counter++;
