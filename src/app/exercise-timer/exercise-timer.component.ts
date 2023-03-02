@@ -19,6 +19,7 @@ export class ExerciseTimerComponent {
 
   start() {
     this.countdown.begin();
+    audio.crossOrigin = 'anonymous';
     audio.src = "assets/ping.mp3"
       audio.load()
       audio.play()
@@ -51,6 +52,7 @@ export class ExerciseTimerComponent {
     if (e.action == 'done') {
       counter++;
       console.log(counter);
+      audio.crossOrigin = 'anonymous';
       audio.src = "../../assets/next.mp3"
       audio.load()
       audio.play()
