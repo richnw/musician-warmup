@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { CountdownComponent, CountdownEvent } from 'ngx-countdown';
 
 let counter: number = 0;
-let exerciseTime = 30;
+let exerciseTime = 3;
 let audio = new Audio()
 
 @Component({
@@ -41,19 +41,20 @@ export class ExerciseTimerComponent {
   handleEvent(e: CountdownEvent) {
     if (e.action == 'done' && counter == 6) {
       counter++;
+      audio.crossOrigin = 'anonymous';
       audio.src = "assets/end.mp3"
       audio.load()
       audio.play()
       return;
     }
     if (e.action == 'done' && counter == 5) {
-      this.countdown.config = { leftTime: 60, demand: true };
+      this.countdown.config = { leftTime: 6, demand: true };
     }
     if (e.action == 'done') {
       counter++;
       console.log(counter);
       audio.crossOrigin = 'anonymous';
-      audio.src = "../../assets/next.mp3"
+      audio.src = "/assets/ping.mp3"
       audio.load()
       audio.play()
       this.countdown.restart();
