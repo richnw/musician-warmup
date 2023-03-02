@@ -3,6 +3,7 @@ import { CountdownComponent, CountdownEvent } from 'ngx-countdown';
 
 let counter: number = 0;
 let exerciseTime = 30;
+let audio = new Audio()
 
 @Component({
   selector: 'app-exercise-timer',
@@ -18,6 +19,9 @@ export class ExerciseTimerComponent {
 
   start() {
     this.countdown.begin();
+    audio.src = "../../assets/next.mp3"
+      audio.load()
+      audio.play()
     counter++;
     this.showButton = false;
   }
@@ -36,6 +40,9 @@ export class ExerciseTimerComponent {
   handleEvent(e: CountdownEvent) {
     if (e.action == 'done' && counter == 6) {
       counter++;
+      audio.src = "../../assets/finish.mp3"
+      audio.load()
+      audio.play()
       return;
     }
     if (e.action == 'done' && counter == 5) {
@@ -44,6 +51,9 @@ export class ExerciseTimerComponent {
     if (e.action == 'done') {
       counter++;
       console.log(counter);
+      audio.src = "../../assets/next.mp3"
+      audio.load()
+      audio.play()
       this.countdown.restart();
       this.countdown.begin();
     }
