@@ -19,7 +19,7 @@ export class ExerciseTimerComponent {
 
   start() {
     this.countdown.begin();
-    audio.src = "../../assets/ping.mp3"
+    audio.src = "assets/ping.mp3"
       audio.load()
       audio.play()
     counter++;
@@ -40,7 +40,7 @@ export class ExerciseTimerComponent {
   handleEvent(e: CountdownEvent) {
     if (e.action == 'done' && counter == 6) {
       counter++;
-      audio.src = "../../assets/end.mp3"
+      audio.src = "assets/end.mp3"
       audio.load()
       audio.play()
       return;
