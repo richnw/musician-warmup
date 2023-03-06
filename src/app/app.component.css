@@ -4,6 +4,8 @@
     margin: 0 auto;
     color: #A3CEF1;
     display: grid;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
     
 }
 
