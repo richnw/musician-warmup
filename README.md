@@ -1,9 +1,9 @@
-A user can click a button to start a timer.
+# Musician Warmup
 
-A user can see the timer counting down from 30 seconds (for the first five exercises).
-A user can see the name of the current exercise.
+Making sure to limber up and get loose before playing your instrument is important for all musicians. This can help prevent injuries.
 
-Every time the timer reaches 0, there is a noise, the timer restarts and the current exercise changes.
+This web app guides you through a 3.5 minute warmup with an embedded timer and sounds.
 
-The final exercise lasts 60 seconds and makes a different noise upon completion.
-The user will see a congratulations message.
+This is my first project to use Typescript and Angular.
+
+You can see it hosted here https://richnw.github.io/musician-warmup/
