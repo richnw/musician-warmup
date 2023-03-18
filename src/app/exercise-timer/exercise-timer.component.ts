@@ -30,16 +30,21 @@ export class ExerciseTimerComponent {
   printExercise() {
     if (counter == 0) return '';
     if (counter == 1) return 'Jump around and shake everything out';
-    if (counter == 2) return 'Fingertips on shoulders - elbow circles';
-    if (counter == 3) return 'Twists';
-    if (counter == 4) return 'Side bends';
-    if (counter == 5) return 'Hula hoops with wrist circles';
-    if (counter == 6) return 'Fold forwards and hang upside down';
+    if (counter == 2) return 'Twists';
+    if (counter == 3) return 'Side bends';
+    if (counter == 4) return 'Hula hoops';
+    if (counter == 5) return 'Standing Cat/Cow \n (arch spine forwards then backwards)';
+    if (counter == 6) return 'Shoulder rolls';
+    if (counter == 7) return 'Fingertips on shoulders - elbow circles';
+    if (counter == 8) return 'Bicep curls';    
+    if (counter == 9) return 'Keeping elbows at side: rotate palms to face down then up';
+    if (counter == 10) return 'Clasp hands together and make wrist circles in both directions';
+    if (counter == 11) return 'Finger flicks';
     return "Congratulations- you're ready to play";
   }
 
   handleEvent(e: CountdownEvent) {
-    if (e.action == 'done' && counter == 6) {
+    if (e.action == 'done' && counter == 11) {
       counter++;
       audio.crossOrigin = 'anonymous';
       audio.src = "assets/end.mp3"
@@ -47,9 +52,13 @@ export class ExerciseTimerComponent {
       audio.play()
       return;
     }
-    if (e.action == 'done' && counter == 5) {
-      this.countdown.config = { leftTime: 60, demand: true };
+    if (e.action == 'done' && counter == 4) {
+      this.countdown.config = { leftTime: 15, demand: true };
     }
+    if (e.action == 'done' && counter == 7) {
+      this.countdown.config = { leftTime: 10, demand: true };
+    }
+
     if (e.action == 'done') {
       counter++;
       audio.crossOrigin = 'anonymous';
