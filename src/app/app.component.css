@@ -29,3 +29,24 @@
      
 }
 
+.subtitle_link {
+    padding-bottom: 0.5em;
+    font-size: medium;
+    display: inline;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+
+  
+
+}
+
+a {
+   padding: 0;
+   color: inherit;
+}
+
+
+
+
+
