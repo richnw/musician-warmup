@@ -4,6 +4,8 @@
     margin: 0 auto;
     color: #A3CEF1;
     display: grid;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
     
 }
 
@@ -26,4 +28,25 @@
     text-align: center; 
      
 }
+
+.subtitle_link {
+    padding-bottom: 0.5em;
+    font-size: medium;
+    display: inline;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+
+  
+
+}
+
+a {
+   padding: 0;
+   color: inherit;
+}
+
+
+
+
 
