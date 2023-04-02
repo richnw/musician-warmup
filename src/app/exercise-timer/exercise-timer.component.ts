@@ -52,7 +52,10 @@ export class ExerciseTimerComponent {
       audio.play()
       return;
     }
-    if (e.action == 'done' && counter == 4) {
+    if (e.action == 'done' && counter == 2) {
+      this.countdown.config = { leftTime: 25, demand: true };
+    }
+    if (e.action == 'done' && counter == 5) {
       this.countdown.config = { leftTime: 15, demand: true };
     }
     if (e.action == 'done' && counter == 7) {
