@@ -1,5 +1,5 @@
 .timer {
-  color: #274C77;
+  color: #F27059;
   font-size:xx-large;
   justify-content: center;
   align-items: center;
@@ -27,11 +27,11 @@
 /* CSS */
 
   align-items: center;
-  background-color: #e7ecef;
-  border: 2px solid #274c77;
+  background-color: #F8EDEB;
+  border: 2px solid #FFB5A7;
   border-radius: 8px;
   box-sizing: border-box;
-  color: #274C77;
+  color: #F27059;
   cursor: pointer;
   display: grid;
   font-family: sans-serif;
